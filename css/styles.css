@@ -1,0 +1,218 @@
+/*Default Code*/
+
+body {
+	margin: 0;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+
+header {
+	
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F7F8FA;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: flex;
+  flex-direction: column-reverse;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+.site-title {
+	margin: 0;
+}
+
+h6 {
+	margin-top: 5px;
+}
+
+.main-area {
+	background-color: #BEDBBB;
+}
+
+.main-area h3 {
+	margin-bottom: 0;
+}
+
+.main-area a {
+	text-decoration: none;
+}
+
+.main-area a:hover {
+	color: red;
+}
+
+/*Starting Section*/
+@media only screen and (min-width: 1040px) {
+
+.site {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 38px 15em 1fr 100px;
+	grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer"
+	
+}
+
+.navi {
+	grid-area: nav;
+}
+
+.masthead {
+	background-image: url("../images/chipn.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-area: header;
+	text-align: center;
+	padding-top: 5%;
+	color: white;
+}
+
+.main-area {
+	grid-area: main;
+	display: flex-box;
+}
+
+.colophon {
+	grid-area: footer;
+	text-align: center;
+	background-color: #46474C;
+}
+
+.first-img {
+	grid-area: image;
+	margin-left: 10%;
+	margin-bottom: 300px;
+}
+
+.second-img {
+	grid-area: image2;
+	clear: both;
+	margin-left: 10%;
+	margin-bottom: 350px;
+}
+
+.first-img img {
+	max-width: 500px;
+	height: auto;
+	float: left;
+	padding-right: 30px;
+}
+
+.second-img img {
+	max-width: 500px;
+	height: auto;
+	float: left;
+	padding-right: 30px;
+}
+}
+
+@media only screen and (max-width: 1039px) {
+
+.site {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 38px 15em 1fr 100px;
+	grid-template-areas: 
+		"nav"
+		"header"
+		"main"
+		"footer"
+	
+}
+
+.navi {
+	grid-area: nav;
+}
+
+.masthead {
+	background-image: url("../images/chipn.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-area: header;
+	text-align: center;
+	padding-top: 10%;
+	color: white;
+}
+
+.main-area {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	grid-template-areas: 
+		"image"
+		"image2"
+}
+
+.colophon {
+	grid-area: footer;
+	text-align: center;
+	background-color: #46474C;
+}
+
+.colophon aside {
+	align-items: center;
+	justify-items: center;
+}
+
+.first-img {
+	grid-area: image;
+}
+
+.details {
+	grid-area: detail;
+}
+
+.second-img {
+	grid-area: image2;
+}
+
+.details2 {
+	grid-area: detail2;
+}
+
+.first-img img {
+	max-width: 400px;
+	height: auto;
+}
+
+.second-img img {
+	max-width: 400px;
+	height: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
